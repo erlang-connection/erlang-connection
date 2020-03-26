@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .Site.Title }}</title>
+    {{ partial "meta.html" . }}
+    {{ partial "opengraph.html" . }}
+    {{ partial "opengraph-twitter.html" . }}
+    {{ partial "bootstrap.html" . }}
+    <link rel="stylesheet" href="/css/style-events.css">
+  </head>
+  <body>
+    {{ partial "navbar.html" . }}
+    <div class="events container-fluid">
+      <div class="row row-cols-1 row-cols-md-4 justify-content-center list">
+        {{ range .Pages.ByDate.Reverse }}
+        {{ partial "event.html" . }}
+        {{ end }}
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script>
+      var options = {
+          valueNames: [ 'event-title' ]
+      };
+      var userList = new List('events', options);
+    </script>
+  </body>
+</html>

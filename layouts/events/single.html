@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ .Site.Title }}</title>
+    {{ partial "meta.html" . }}
+    {{ partial "opengraph.html" . }}
+    {{ partial "opengraph-twitter.html" . }}
+    {{ partial "bootstrap.html" . }}
+    <link rel="stylesheet" href="/css/style-posts.css">
+  </head>
+
+  <body>
+    {{ partial "navbar.html" . }}
+    
+    <div class="post container-fluid">
+      <div class="row justify-content-center">
+        <div class="post-header col-sm-3">
+          <img class="post-image image-fluid" src="{{ .Params.image }}">
+          <div class="post-header">
+            <div class="post-title">
+              <h1>{{ .Title }}</h1>
+              <h2>{{ .Params.subtitle }}</h2>
+            </div>
+            <div class="post-info">
+              <p>{{ .Date }}</p>
+              <p>{{ .Params.location.city }}, {{ .Params.location.country }}</p>
+              <div class="post-keywords">
+                {{ range .Params.keywords }}
+                <a href="#">{{ . }}</a>
+                {{ end }}
+              </div>
+              <hr>
+              {{ range .Params.speakers }}
+              <div class="speaker">
+                <a href="{{ .link }}">{{ .name }}</a>: 
+                {{ .subject }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          <hr>
+          <div class="post-np">
+            {{ with .PrevInSection }}
+            <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
+            {{ end }}<br>
+            {{ with .NextInSection }}
+            <a class="next" href="{{.Permalink}}">{{.Title}}</a>
+            {{ end }}
+          </div>
+        </div>
+        
+        <div class="post-content col-sm-4">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 # GNU Makefile 
 ######################################################################
 DESTDIR ?= erlang-connection.github.io
-HUGO_OPTS += -D --buildFuture
+HUGO_OPTS += -D --buildFuture -E -F
 
 .PHONY += help
 help:
@@ -10,7 +10,7 @@ help:
 
 .PHONY += all
 all:
-	hugo $(HUGO_OPTS) serve -d $(DESTDIR)
+	hugo $(HUGO_OPTS) -d $(DESTDIR)
 
 .PHONY += test
 test:

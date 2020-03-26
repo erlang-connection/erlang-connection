@@ -1,0 +1,9 @@
+<meta name="og:locale" content="{{ .Site.Language }}">
+<meta name="og:type" content="website">
+<meta name="og:description" content="{{ .Summary }}">
+<meta name="og:site_name" content="{{ .Site.Title }}">
+<meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="og:url" content="{{ .Permalink }}">
+{{ if .Params.image }}
+<meta name="og:image" content="{{ .Params.image }}">
+{{ end }}

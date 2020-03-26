@@ -1,0 +1,97 @@
+<div class="event col rounded">
+
+  <!-- event header -->
+  <div class="event-header">
+    {{/* create the image header of the event */}}
+    {{ if .Params.image }}
+    <div class="event-image rounded-top" style="background-image: url('{{ .Params.image }}');">
+      {{/* check if the date is greater or equal than current date
+            then it's an upcoming event...
+         */}}
+      {{ if ge .Date now }}
+      <div class="event-icon event-icon-future bg-warning">
+        <img src="/icons/clock-history.svg" alt="" width="32" height="32" title="Upcoming">
+      </div>
+      {{/* ...else it's a passed event */}}
+      {{ else }}
+      <div class="event-icon event-icon-passed bg-success">
+        <img src="/icons/check-circle.svg" alt="" width="32" height="32" title="Passed">
+      </div>
+      {{ end }}
+
+      {{/* add the location of the event */}}
+      {{ if .Params.location }}
+      <div class="event-location  align-items-end">
+        {{ .Params.location.city }},
+        {{ .Params.location.country }}
+        {{ if eq .Params.location.online true }}
+        (online)
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- event content -->
+  <div class="event-content">
+    {{/* set event title and subtitle */}}
+    <div class="event-title">
+      <a href="{{ .Permalink }}">
+        <h1 class="test">{{ .Title }}</h1>
+        {{ if .Params.subtitle }}
+        <h2>{{ .Params.subtitle }}</h2>
+        {{ end }}
+      </a>
+    </div>
+    
+    {{/* if the date is present, we format it */}}
+    {{ if .Date }}
+    <div class="event-date">
+      <p>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+    </div>
+    {{ end }}
+  
+    <hr>
+
+    {{/* generate the list of keywords if present */}}
+    {{ if .Params.keywords }}
+    <div class="event-keywords">
+      {{ range .Params.keywords }}
+      <a href="#">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{/* now define the description part if present,
+         else we take the summary of the article */}}
+    {{ if .Params.description }}
+    <div class="event-description">
+      {{ .Params.description }}
+    </div>
+    {{ else }}
+    <div class="event-description">
+      {{ .Summary }}
+    </div>
+    {{ end }}
+
+    {{/* create the list of speakers if those one exists */}}
+    {{ if .Params.speakers }}
+    <hr>
+    <div class="event-speakers">
+      {{ range .Params.speakers }}
+      <div class="event-speaker">
+        {{ if .name }}
+        {{ if .link }}
+        <a href="{{.link}}">{{ .name }}</a>
+        {{ else }}
+        <a href="#">{{ .name }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  
+  </div>
+</div>
