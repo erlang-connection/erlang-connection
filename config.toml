@@ -1,0 +1,168 @@
+theme = "hugo-icon"
+baseURL = "https://erlang-connection.eu"
+languageCode = "en-US"
+title = "Erlang Connection"
+
+[params]
+  author = "Erlang Connection"
+  description = "Free and open Erlang Connection organization"
+
+[params.hero]
+  img = "images/hero_bg.jpg"
+  title = "Erlang Connection"
+  description = "Learn, Share, and Meet members of the Erlang community."
+
+# Navigation section
+[params.nav]
+  mission = "Our Mission"
+  services = "Services"
+  team = "The Team"
+  contact = "Get In Touch"
+
+[params.mission]
+  enable = true
+
+  [params.mission.images]
+    enable = true
+
+    [[params.mission.images.list]]
+      img = "images/img_3.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_2.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_1.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_4.jpg"
+
+  [[params.mission.item]]
+    weight = 1
+    name = "learn"
+    title = "Learn"
+    subtitle = "A new way of thinking and doing with Erlang"
+    description = "Erlang is a functional and distributed programming language based on modern concept. This uncommon paradigm can be complex to understand. We are here to help you to progress."
+
+  [[params.mission.item]]
+    weight = 2
+    name = "share"
+    title = "Share"
+    subtitle = "Our vision to the IT world"
+    description = "Erlang Connection is a free and open organization. We want to give you all you need to succeed with Erlang."
+
+  [[params.mission.item]]
+    weight = 3
+    name = "meet"
+    title = "Meet"
+    subtitle = "The active members of the community"
+    description = "Erlang is an open-source language, with a large community of different profile. We want to give you the possibility to meet them, from social events to mentoring."
+
+# Services section
+[params.services]
+  enable = true
+  # add video in a near future
+  # video = false 
+  # vidlink = ""
+  title = "Our Services"
+  description = "Become a member, and access to a large community of Erlang professional using this language day to day."
+
+  [[params.services.item]]
+    icon = "icon-book"
+    title = "Directory"
+    description = "An access to a directory of users, developers and companies using Erlang."
+
+  [[params.services.item]]
+    icon = "icon-group"
+    title = "Mentoring"
+    description = "Learn alone is hard, we offer you the possibility to become a mentee, and share the knowledge and advices of mentors."
+
+  [[params.services.item]]
+    icon = "icon-paper-plane"
+    title = "Events"
+    description = "Conferences, meetups, or social events to see each other, in Europe."
+
+# Work section
+# [params.work]
+#   enable = true
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_1.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_2.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_3.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_2.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_3.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_2.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_3.jpg"
+# 
+#   [[params.work.item]]
+#     title = "Consectetur adipisicing"
+#     subtitle = "Web Design"
+#     img = "images/img_4.jpg"
+
+# Team section
+[params.team]
+  enable = true
+  title = "Meet The Team"
+  description = "Made by passionate to everyone. Our team is here to help you reaching your goals and answers your questions. Contact them, they will be happy"
+
+  [[params.team.item]]
+    name = "Benoît Chesneau"
+    position = "co-founder"
+    description = ""
+    img = "images/person1.jpg"
+    twitter = "https://twitter.com/benoitc"
+    github = "https://github.com/benoitc"
+
+  [[params.team.item]]
+    name = "Mathieu Kerjouan"
+    position = "co-founder"
+    description = "sysadmin felt in love with Erlang programming many years ago."
+    img = "images/person2.jpg"
+    twitter = "https://twitter.com/niamtokik"
+    github = "https://github.com/niamtokik"
+
+# Contact section
+[params.contact]
+  enable = true
+  title = "Get In Touch"
+  message = "You can contact us on all our social network, feel free to send us an email!"
+  name_placeholder = "Your name"
+  email_placeholder = "Your email"
+  email_disclaimer = "We'll never share your email with anyone else."
+  message_placeholder = "Please enter a message."
+  button_text = "Submit"
+
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = true
+  # note = ""
+  github = "https://github.com/erlang-connection"
+  twitter = "https://twitter.com/ErlangConnect"
+  # linkedin = "#"
+  # instagram = "#"
+  
