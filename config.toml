@@ -61,67 +61,75 @@ title = "Erlang Connection"
   # add video in a near future
   # video = false 
   # vidlink = ""
-  title = "Our Services"
+  title = "Our Services (coming soon)"
   description = "Become a member, and access to a large community of Erlang professional using this language day to day."
 
   [[params.services.item]]
     icon = "icon-book"
-    title = "Directory"
-    description = "An access to a directory of users, developers and companies using Erlang."
+    title = "Erlang Touch (soon)"
+    description = "Erlang Touch is a directory made for users, developers and companies using Erlang in their projects."
 
   [[params.services.item]]
     icon = "icon-group"
-    title = "Mentoring"
+    title = "Erlang Punch (soon)"
     description = "Learn alone is hard, we offer you the possibility to become a mentee, and share the knowledge and advices of mentors."
 
   [[params.services.item]]
-    icon = "icon-paper-plane"
-    title = "Events"
+    icon = "icon-paper-plane (soon)"
+    title = "Erlang Connect"
     description = "Conferences, meetups, or social events to see each other, in Europe."
 
 # Work section
-# [params.work]
-#   enable = true
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_1.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_2.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_3.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_2.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_3.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_2.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_3.jpg"
-# 
-#   [[params.work.item]]
-#     title = "Consectetur adipisicing"
-#     subtitle = "Web Design"
-#     img = "images/img_4.jpg"
+[params.work]
+  enable = true
+ 
+  [[params.work.item]]
+    title = "Organization Statuts"
+    subtitle = "Like any free and open organization, you should have access to the statuts"
+    target = "/doc/statuts.pdf"
+    img = "images/img_2.jpg"
+
+  [[params.work.item]]
+    title = "Organization Rules"
+    subtitle = "Organization rules extend the statuts by defining how it works"
+    img = "images/img_3.jpg"
+    target = "/doc/reglement-interieur.pdf"
+
+  [[params.work.item]]
+    title = "Subscribe"
+    subtitle = "Come and join us!"
+    img = "images/img_2.jpg"
+    target = "https://www.helloasso.com/associations/erlang-connection/adhesions/adhesion"
+ 
+  [[params.work.item]]
+    title = "Helloasso"
+    subtitle = "Helloasso help us to manage users and services"
+    img = "images/img_3.jpg"
+    target = "https://www.helloasso.com/associations/erlang-connection/"
+ 
+  [[params.work.item]]
+    title = "Github"
+    subtitle = "Our official github account"
+    img = "images/img_3.jpg"
+    target = "https://github.com/erlang-connection"
+ 
+  [[params.work.item]]
+    title = "Gitlab"
+    subtitle = "Out official gitlab account"
+    img = "images/img_2.jpg"
+    target = "https://gitlab.com/ErlangConnection"
+ 
+  [[params.work.item]]
+    title = "Twitch"
+    subtitle = "Here our main streaming solution"
+    img = "images/img_3.jpg"
+    target = "https://www.twitch.tv/erlangconnection"
+ 
+  [[params.work.item]]
+    title = "LinkedIn"
+    subtitle = "Web Design"
+    img = "images/img_4.jpg"
+    target = "https://www.linkedin.com/groups/12384661/"
 
 # Team section
 [params.team]
@@ -131,17 +139,17 @@ title = "Erlang Connection"
 
   [[params.team.item]]
     name = "Benoît Chesneau"
+    img = "img/benoit.jpg"
     position = "co-founder"
     description = "Benoit Chesneau is the founder of Enki Multimedia, a company providing P2P and data solutions and consulting. He has 14 years of experience in Erlang and is the author of many opensource libraries and projects. He is also the author of Gunicorn a well known WSGI server written in Python."
-    img = "images/person1.jpg"
     twitter = "https://twitter.com/benoitc"
     github = "https://github.com/benoitc"
 
   [[params.team.item]]
     name = "Mathieu Kerjouan"
     position = "co-founder"
-    description = "sysadmin felt in love with Erlang programming many years ago."
-    img = "images/person2.jpg"
+    description = "Sysadmin and System Architect. Felt in love with functional programming many years ago. Use OpenBSD and Erlang in day to day activities."
+    img = "img/mathieu.jpg"
     twitter = "https://twitter.com/niamtokik"
     github = "https://github.com/niamtokik"
 
@@ -149,7 +157,7 @@ title = "Erlang Connection"
 [params.contact]
   enable = true
   title = "Get In Touch"
-  message = "You can contact us on all our social network, feel free to send us an email!"
+  message = "Become a member, you can [subscribe](https://www.helloasso.com/associations/erlang-connection/adhesions/adhesion) directly on helloasso. You can also contact us there!"
   name_placeholder = "Your name"
   email_placeholder = "Your email"
   email_disclaimer = "We'll never share your email with anyone else."

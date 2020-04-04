@@ -1,0 +1,20 @@
+<div id="fh5co-gallery">
+  {{ range .Site.Params.work.item }}
+  {{ if .target }}
+  <a href="{{ .target | absURL }}" class="fh5co-item image-popup" style="background-image: url({{ .img | absURL }})">
+  {{ else }}
+  <a href="{{ .img | absURL }}" class="fh5co-item image-popup" style="background-image: url({{ .img | absURL }})">
+  {{ end }}
+    <div class="fh5co-overlay">
+    </div>
+    <div class="fh5co-copy">
+      <div class="fh5co-copy-inner">
+	<h2>{{ .title | markdownify }}</h2>
+	{{ if isset . "subtitle" }}
+	<h3>{{ .subtitle | markdownify }}</h3>
+	{{ end }}
+      </div>
+    </div>
+  </a>
+  {{ end }}
+</div> <!-- END fh5co-gallery -->
