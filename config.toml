@@ -131,15 +131,15 @@ title = "Erlang Connection"
 
   [[params.team.item]]
     name = "Benoît Chesneau"
-    position = "co-foundateur"
-    description = "Benoit Chesneau est le fondateur d'Enki Multimedia, une société fournissant des solutions de P2P et de données et des conseils. Il a 14 ans d'expérience à Erlang et est l'auteur de nombreuses bibliothèques et projets open source. Il est également l'auteur de Gunicorn, un serveur WSGI bien connu écrit en Python."
+    position = "co-founder"
+    description = "Benoit Chesneau is the founder of Enki Multimedia, a company providing P2P and data solutions and consulting. He has 14 years of experience in Erlang and is the author of many opensource libraries and projects. He is also the author of Gunicorn a well known WSGI server written in Python."
     img = "images/person1.jpg"
     twitter = "https://twitter.com/benoitc"
     github = "https://github.com/benoitc"
 
   [[params.team.item]]
     name = "Mathieu Kerjouan"
-    position = "co-foundateur"
+    position = "co-founder"
     description = "sysadmin felt in love with Erlang programming many years ago."
     img = "images/person2.jpg"
     twitter = "https://twitter.com/niamtokik"
