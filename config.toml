@@ -10,7 +10,7 @@ title = "Erlang Connection"
 [params.hero]
   img = "images/hero_bg.jpg"
   title = "Erlang Connection"
-  description = "Learn, Share, and Meet members of the Erlang community."
+  description = "An open and collaborative platform for a sustainable Erlang ecosystem"
 
 # Navigation section
 [params.nav]
@@ -46,7 +46,7 @@ title = "Erlang Connection"
     name = "share"
     title = "Share"
     subtitle = "Our vision to the IT world"
-    description = "Erlang Connection is a free and open organization. We want to give you all you need to succeed with Erlang."
+    description = "Erlang Connection is a free and open organization. We want to create a platform where people can share and exchange about their experiences and usage in Erlang. Get all you need to succeed with Erlang."
 
   [[params.mission.item]]
     weight = 3
@@ -67,12 +67,12 @@ title = "Erlang Connection"
   [[params.services.item]]
     icon = "icon-book"
     title = "Erlang Touch (soon)"
-    description = "Erlang Touch is a directory made for users, developers and companies using Erlang in their projects."
+    description = "With Erlang Touch stay in contact with users, developers and companies using Erlang in their day to day activities."
 
   [[params.services.item]]
     icon = "icon-group"
     title = "Erlang Punch (soon)"
-    description = "Learn alone is hard, we offer you the possibility to become a mentee, and share the knowledge and advices of mentors."
+    description = "Mentors and mentees can meet on the platform to learn about the languages and programs based on Erlang."
 
   [[params.services.item]]
     icon = "icon-paper-plane (soon)"
@@ -140,15 +140,15 @@ title = "Erlang Connection"
   [[params.team.item]]
     name = "Benoît Chesneau"
     img = "img/benoit.jpg"
-    position = "co-founder"
+    position = "President (co-founder)"
     description = "Benoit Chesneau is the founder of Enki Multimedia, a company providing P2P and data solutions and consulting. He has 14 years of experience in Erlang and is the author of many opensource libraries and projects. He is also the author of Gunicorn a well known WSGI server written in Python."
     twitter = "https://twitter.com/benoitc"
     github = "https://github.com/benoitc"
 
   [[params.team.item]]
     name = "Mathieu Kerjouan"
-    position = "co-founder"
-    description = "Sysadmin and System Architect. Felt in love with functional programming many years ago. Use OpenBSD and Erlang in day to day activities."
+    position = "Secretary (co-founder)"
+    description = "Sysadmin and System Architect. Felt in love with functional programming many years ago. Use OpenBSD and Erlang in day to day activities. Like to share its knowledge and organize events in France and Europe."
     img = "img/mathieu.jpg"
     twitter = "https://twitter.com/niamtokik"
     github = "https://github.com/niamtokik"
@@ -168,9 +168,9 @@ title = "Erlang Connection"
 # Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
 [params.footer]
   enable = true
-  # note = ""
+  note = ""
   github = "https://github.com/erlang-connection"
   twitter = "https://twitter.com/ErlangConnect"
-  # linkedin = "#"
+  linkedin = "https://www.linkedin.com/groups/12384661/"
   # instagram = "#"
   
