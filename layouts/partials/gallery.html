@@ -1,7 +1,7 @@
 <div id="fh5co-gallery">
   {{ range .Site.Params.work.item }}
   {{ if .target }}
-  <a href="{{ .target | absURL }}" class="fh5co-item image-popup" style="background-image: url({{ .img | absURL }})">
+  <a href="{{ .target | absURL }}" class="fh5co-item" style="background-image: url({{ .img | absURL }})">
   {{ else }}
   <a href="{{ .img | absURL }}" class="fh5co-item image-popup" style="background-image: url({{ .img | absURL }})">
   {{ end }}

@@ -102,10 +102,10 @@ title = "Erlang Connection"
     target = "https://www.helloasso.com/associations/erlang-connection/adhesions/adhesion"
  
   [[params.work.item]]
-    title = "Helloasso"
-    subtitle = "Helloasso help us to manage users and services"
+    title = "Documentation"
+    subtitle = "Here our official documentation for our speakers."
     img = "images/img_3.jpg"
-    target = "https://www.helloasso.com/associations/erlang-connection/"
+    target = "https://erlang-connection.eu/doc/speakers.pdf"
  
   [[params.work.item]]
     title = "Github"
@@ -114,10 +114,10 @@ title = "Erlang Connection"
     target = "https://github.com/erlang-connection"
  
   [[params.work.item]]
-    title = "Gitlab"
-    subtitle = "Out official gitlab account"
+    title = "Meet us with Jitsi "
+    subtitle = "Our official and dedicated Jitsi platform"
     img = "images/img_2.jpg"
-    target = "https://gitlab.com/ErlangConnection"
+    target = "https://meet.erlang-connect.eu/"
  
   [[params.work.item]]
     title = "Twitch"
