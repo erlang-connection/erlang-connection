@@ -157,12 +157,13 @@ title = "Erlang Connection"
 [params.contact]
   enable = true
   title = "Get In Touch"
-  message = "Become a member, you can [subscribe](https://www.helloasso.com/associations/erlang-connection/adhesions/adhesion) directly on helloasso. You can also contact us there!"
+  message = "If you want to have more information and news about Erlang Connection, you can fill [this form hosted on framaforms servers](https://framaforms.org/information-erlang-connection-1586269396)."
   name_placeholder = "Your name"
   email_placeholder = "Your email"
   email_disclaimer = "We'll never share your email with anyone else."
   message_placeholder = "Please enter a message."
   button_text = "Submit"
+  form = false
 
 # Footer section
 # Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
