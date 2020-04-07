@@ -1,5 +1,5 @@
 theme = "hugo-icon"
-baseURL = "https://erlang-connection.gitlab.io/erlang-connection"
+baseURL = "https://erlang-connection.gitlab.io/erlang-connection/"
 languageCode = "en-US"
 title = "Erlang Connection"
 
@@ -86,14 +86,14 @@ title = "Erlang Connection"
   [[params.work.item]]
     title = "Organization Statuts"
     subtitle = "Like any free and open organization, you should have access to the statuts"
-    target = "/doc/statuts.pdf"
+    target = "doc/statuts.pdf"
     img = "images/img_2.jpg"
 
   [[params.work.item]]
     title = "Organization Rules"
     subtitle = "Organization rules extend the statuts by defining how it works"
     img = "images/img_3.jpg"
-    target = "/doc/reglement-interieur.pdf"
+    target = "doc/reglement-interieur.pdf"
 
   [[params.work.item]]
     title = "Subscribe"
@@ -105,7 +105,7 @@ title = "Erlang Connection"
     title = "Documentation"
     subtitle = "Here our official documentation for our speakers."
     img = "images/img_3.jpg"
-    target = "/doc/speakers.pdf"
+    target = "doc/speakers.pdf"
  
   [[params.work.item]]
     title = "Github"
