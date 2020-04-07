@@ -10,7 +10,7 @@ title = "Erlang Connection"
 [params.hero]
   img = "images/hero_bg.jpg"
   title = "Erlang Connection"
-  description = "An open and collaborative platform for a sustainable Erlang ecosystem"
+  description = "An open and collaborative European platform for a sustainable Erlang ecosystem"
 
 # Navigation section
 [params.nav]
