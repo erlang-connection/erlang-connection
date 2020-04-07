@@ -1,5 +1,5 @@
 theme = "hugo-icon"
-baseURL = "https://erlang-connection.gitlab.io"
+baseURL = "https://erlang-connection.gitlab.io/erlang-connection/"
 languageCode = "en-US"
 title = "Erlang Connection"
 
