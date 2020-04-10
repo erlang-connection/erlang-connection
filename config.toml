@@ -157,7 +157,10 @@ title = "Erlang Connection"
 [params.contact]
   enable = true
   title = "Get In Touch"
-  message = "If you want to have more information and news about Erlang Connection, you can fill [this form hosted on framaforms servers](https://framaforms.org/information-erlang-connection-1586269396)."
+  message = """If you want to have more information and news about Erlang Connection, you can fill one of these forms:
+ - [in French](https://framaforms.org/information-erlang-connection-1586269396)
+ - [in English](https://framaforms.org/erlang-connection-information-1586538416)"""
+
   name_placeholder = "Your name"
   email_placeholder = "Your email"
   email_disclaimer = "We'll never share your email with anyone else."
