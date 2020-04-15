@@ -3,6 +3,14 @@ baseURL = "https://erlang-connection.eu"
 languageCode = "en-US"
 title = "Erlang Connection"
 
+[languages]
+  [languages.fr]
+    title = "Erlang Connection"
+
+  [languages.en]
+    title = "Erlang Connection"
+
+
 [params]
   author = "Erlang Connection"
   description = "Free and open Erlang Connection organization"
