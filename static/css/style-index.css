@@ -1,8 +1,39 @@
 .slide {
-    height: 32em;
+    min-height: 36em;
 }
 
 .home-event {
     width: 100%;
-    max-height: 4em;
+    background-color: pink;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.6em;
+}
+
+.home-title h1,h2 {
+    background-color: white;
+    text-align: right;
+}
+
+.home-event a, a:hover, a:visited, a:active {
+    color: black;
+    text-decoration-line: none;
+}
+
+.home-event:hover {
+    background-color: red;
+}
+
+.home-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-event-summary {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
