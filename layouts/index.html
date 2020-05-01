@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style-index.css">
   </head>
   <body>
-    {{/* partial "navbar.html" */}}
+    {{ partial "navbar-home.html" . }}
 
     <!-- home container -->
     <div class="container-fluid slide">
@@ -25,21 +25,71 @@
           <a class="" href="{{ .Permalink }}">
             <div class="home-event rounded">
               <h4>{{ .Title }}</h4>
-              <p class="home-event-summary">{{ .Summary }}</p>
+              <div class="home-even-date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+              <div class="home-event-summary">{{ .Summary | markdownify}}</div>
             </div>
           </a>
           {{ end }}
           <div class="home-events-button">
-            <button type="button" class="btn btn-primary">See more...</button>
+            <a href="/events">
+              <button type="button" class="btn btn-primary">
+                See more...
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-
     <!-- services container -->
     <div class="slide container-fluid">
+      <div class="services-entry row">
+        <div class="col" style="height: 100%;">test</div>
+        <div class="col" style="background-image=#000; height: 100%;"></div>
+      </div>
+    </div>
+
+
+    <!-- share -->
+    <div class="slide container-fluid">
+      <div class="share-entry">
+      </div>
     </div>
     
+    <!-- meet -->
+    <div class="slide container-fluid">
+      <div class="meet-entry">
+      </div>
+    </div>
+    
+    <!-- learn -->
+    <div class="slide container-fluid">
+      <div class="learn-entry">
+      </div>
+    </div>
+
+    <!-- legal -->
+    <div class="slide container-fluid">
+      <div class="legal-entry">
+      </div>
+    </div>
+    
+    <!-- team -->
+    <div class="slide container-fluid">
+      <div class="team-entry">
+      </div>
+    </div>
+    
+    <!-- contact -->
+    <div class="slide container-fluid">
+      <div class="contact-entry">
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="slide container-fluid">
+      <div class="footer-entry">
+      </div>
+    </div>
   </body>
 </html>
