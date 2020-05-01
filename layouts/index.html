@@ -13,27 +13,32 @@
     {{/* partial "navbar.html" */}}
 
     <!-- home container -->
-    <div class="slide home container-fluid" style="background-image: url();">
-      <div class="row justify-content-center h-100 align-items-center">
+    <div class="container-fluid slide">
+      <div class="home-entry row justify-items-center align-items-center">
         <div class="home-title col">
           <h1>{{ .Site.Title }}</h1>
           <h2>{{ .Site.Params.Hero.description }}</h2>
         </div>
-        <div class="col">
+
+        <div class="home-events col col-sm-5 rounded">
           {{ range first 3 .Site.RegularPages }}
-          <a href="{{ .Permalink }}">
-            <div class="home-event">
+          <a class="" href="{{ .Permalink }}">
+            <div class="home-event rounded">
               <h4>{{ .Title }}</h4>
               <p class="home-event-summary">{{ .Summary }}</p>
             </div>
           </a>
           {{ end }}
+          <div class="home-events-button">
+            <button type="button" class="btn btn-primary">See more...</button>
+          </div>
         </div>
       </div>
     </div>
 
+
     <!-- services container -->
-    <div class="slide service container-fluid" style="background-color: #ddd;">
+    <div class="slide container-fluid">
     </div>
     
   </body>

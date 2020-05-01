@@ -1,18 +1,71 @@
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #000;
+}
+
 .slide {
-    min-height: 36em;
+    position: relative;
+    background-color: #eee;
+    height: 100%;
+
+}
+
+t {
+    position: relative;
+    height: 100%;
+}
+
+.home-entry {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(217deg, rgba(0, 141, 141,.9), rgba(12,140,195,0) 70.71%),
+                linear-gradient(127deg, rgba(0, 141, 141,.9), rgba(127, 200, 231,.8) 70.71%),
+                linear-gradient(336deg, rgba(127, 200, 231,.8), rgba(0,0,255,0.4) 70.71%);
+}
+
+.home-entry h1 {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.home-entry h2 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.home-events {
+    background-color: white;
+    padding: 1em;
+    max-height: 100%;
 }
 
 .home-event {
-    width: 100%;
-    background-color: pink;
     margin-top: 1em;
     margin-bottom: 1em;
-    padding: 0.6em;
+    background-color: #ddd;
+    padding: 0.3em;
+    box-shadow: 1px 1px 1px #888;
+}
+
+.home-event h1, h2, h3, p {
+    padding: 0;
+}
+
+.home-events-button {
 }
 
 .home-title h1,h2 {
-    background-color: white;
-    text-align: right;
 }
 
 .home-event a, a:hover, a:visited, a:active {
@@ -21,10 +74,12 @@
 }
 
 .home-event:hover {
-    background-color: red;
+    background-color: white;
 }
 
 .home-title {
+    padding-left: 4em;
+    max-width: 40em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -32,7 +87,7 @@
 .home-event-summary {
     display: block;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
