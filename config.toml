@@ -6,6 +6,7 @@ title = "Erlang Connection"
 [params]
   author = "Erlang Connection"
   description = "Free and open Erlang Connection organization"
+  logo = "/img/erlang-connection-full.png"
 
 [params.hero]
   img = "images/hero_bg.jpg"
