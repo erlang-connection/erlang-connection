@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="227.29591mm"
-   height="92.10685mm"
-   viewBox="0 0 227.29591 92.10685"
+   width="863.9342mm"
+   height="74.194733mm"
+   viewBox="0 0 863.93419 74.194733"
    version="1.1"
    id="svg4889"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="erlang-connection-full.svg">
+   sodipodi:docname="erlang-connection-long-full.svg">
   <defs
      id="defs4883" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1068.8688"
-     inkscape:cy="-30.716786"
+     inkscape:cx="2067.4535"
+     inkscape:cy="-2.145357"
      inkscape:document-units="mm"
      inkscape:current-layer="g8461"
      showgrid="false"
@@ -56,7 +56,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(3.2789107,-63.470386)">
+     transform="translate(-3.1431699,-75.582877)">
     <g
        transform="translate(-11.971015,-10.266392)"
        id="g8461"
@@ -83,7 +83,7 @@
            y="143.63055"
            x="11.846349"
            id="tspan4747"
-           sodipodi:role="line">e:c().</tspan></text>
+           sodipodi:role="line">erlang:connection().</tspan></text>
     </g>
   </g>
 </svg>

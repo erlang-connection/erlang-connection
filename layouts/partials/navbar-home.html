@@ -1,29 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed fixed-top">
-  {{ if .Params.logo }}
-  <a class="navbar-brand" href="#"><img src="{{ .Params.logo }}" alt="{{ .Title }}"></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed fixed-top d-flex mb-3">
+  
+  {{ if .Site.Params.logo }}
+  <a class="navbar-brand mr-auto p-2" href="#">
+    <img class="img-fluid" src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" style="height: 2.5em;">
+  </a>
   {{ else }}
-  <a class="navbar-brand" href="#">{{ .Title }}</a>
+  <a class="navbar-brand" href="#">{{ .Site.Title }}</a>
   {{ end }}
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+    <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="/{{ .Section }}">About<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/{{ .Section }}">Services<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/{{ .Section }}">Platform<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/{{ .Section }}">Legal<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/{{ .Section }}">Contact<span class="sr-only">(current)</span></a>
       </li>
 

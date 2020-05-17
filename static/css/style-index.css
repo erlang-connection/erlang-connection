@@ -9,30 +9,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-    background-color: white;
-}
-
-.carousel {
-    height: 100%;
 }
 
 .slide-carousel{
     position: relative;
-    height: 32em;
 }
 
 .slide-carousel img {
-    max-height: 32em;
+    height: 32em;
 }
 
 .home-entry {
-    height: 100%;
     position: relative;
     background: linear-gradient(217deg, rgba(0, 141, 141,.9), rgba(12,140,195,0) 70.71%),
                 linear-gradient(127deg, rgba(0, 141, 141,.9), rgba(127, 200, 231,.8) 70.71%),
                 linear-gradient(336deg, rgba(127, 200, 231,.8), rgba(0,0,255,0.4) 70.71%);
     padding: 0;
     margin: 0;
+    margin-bottom: 0;
     
 }
 
@@ -52,21 +46,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-events {}
 
-.home-carouseul {
+.home-carousel {
     position: relative;
     width: 100%;
-    height: 100%;
+    padding-bottom: 0;
+}
+
+.carousel-indicators {
+    top: 3em;
+    bottom: auto;
 }
 
 .carousel-item {
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-caption {
-    background-color: #eee;
-    opacity: 0.8;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1em;
 }
 
 .carousel-caption p {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #000;
 }
 
@@ -80,12 +88,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-event h1, h2, h3, p {
     padding: 0;
-}
-
-.home-events-button {
-}
-
-.home-title h1,h2 {
 }
 
 .home-event a, a:hover, a:visited, a:active {
